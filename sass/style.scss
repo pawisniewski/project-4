@@ -1,0 +1,78 @@
+/* Variables */
+$color-main: #DAA520;
+$color-hover: #FFD700;
+$color-light: #ffffff;
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+section {
+    padding: 48px 0;
+}
+
+/* Header */
+.splash {
+    background-image: url(https://images.pexels.com/photos/2599270/pexels-photo-2599270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center center;    
+}
+.splash-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 750px;
+    color: $color-light;
+}
+.page-title{
+    font-size: 72px;
+    text-align: center;
+}
+.page-subtitle {
+    font-size: 36px;
+    margin: 0;  
+}
+.btn {
+    background: $color-main;
+    padding: 24px 72px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $color-light;
+    font-weight: 1000;
+    &:hover {
+        background: $color-hover;
+    }
+}
+
+/* Navigation */
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 24px;
+}
+.navigation li {
+    &:hover ul {
+        display: block; 
+    }
+}
+.navigation a {
+    text-decoration: none;
+    color: $color-light;
+}
+.navigation ul ul li {
+    display: block; 
+    padding: 12px 0;   
+}
+.navigation ul ul {
+    display: none;
+    position: absolute;
+    padding: 12px 0;    
+}
+.nav-title {
+    color: $color-main;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 1000;
+}

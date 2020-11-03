@@ -1,0 +1,90 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 48px 0;
+}
+
+/* Header */
+.splash {
+  background-image: url(https://images.pexels.com/photos/2599270/pexels-photo-2599270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center center;
+}
+
+.splash-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 750px;
+  color: #ffffff;
+}
+
+.page-title {
+  font-size: 72px;
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 36px;
+  margin: 0;
+}
+
+.btn {
+  background: #DAA520;
+  padding: 24px 72px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 1000;
+}
+
+.btn:hover {
+  background: #FFD700;
+}
+
+/* Navigation */
+.navigation ul {
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: relative;
+  font-size: 24px;
+}
+
+.navigation li:hover ul {
+  display: block;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation ul ul li {
+  display: block;
+  padding: 12px 0;
+}
+
+.navigation ul ul {
+  display: none;
+  position: absolute;
+  padding: 12px 0;
+}
+
+.nav-title {
+  color: #DAA520;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 1000;
+}
+/*# sourceMappingURL=style.css.map */
