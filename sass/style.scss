@@ -1,14 +1,36 @@
 /* Variables */
-$color-main: #DAA520;
-$color-hover: #FFD700;
+$color-main: #FFD700;
+$color-hover: #d0ad00;
 $color-light: #ffffff;
+$color-medium: 	#A9A9A9;
+$transition: all 1s;
 
 /* Global */
 *, *::before, *::after {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+}
 section {
     padding: 48px 0;
+}
+.section-title {
+    font-size: 48px;
+    font-style: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.section-subtitle {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 96px;
+    text-align: center;
+    color: $color-medium;
+    font-style: italic;
+}
+.box {
+    text-align: center;
 }
 
 /* Header */
@@ -41,6 +63,7 @@ section {
     font-weight: 1000;
     &:hover {
         background: $color-hover;
+        transition: $transition;
     }
 }
 
@@ -54,12 +77,16 @@ section {
 }
 .navigation li {
     &:hover ul {
-        display: block; 
+        display: block;
     }
 }
 .navigation a {
     text-decoration: none;
     color: $color-light;
+    &:hover {
+        color: $color-hover;
+        transition: $transition;
+    }
 }
 .navigation ul ul li {
     display: block; 
@@ -75,4 +102,21 @@ section {
     font-size: 24px;
     font-style: italic;
     font-weight: 1000;
+}
+/* Services */
+.services i {
+    color: $color-main;
+    font-size: 48px;
+    border: 5px solid $color-main;
+    border-radius: 50%;
+    padding: 16px;
+}
+.services h5 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.services p {
+    font-size: 24px;
+    color: $color-medium;
+    
 }
