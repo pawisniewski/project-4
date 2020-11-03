@@ -3,6 +3,7 @@ $color-main: #FFD700;
 $color-hover: #d0ad00;
 $color-light: #ffffff;
 $color-medium: 	#A9A9A9;
+$color-dark: 	#000000;
 $transition: all 1s;
 
 /* Global */
@@ -103,11 +104,16 @@ section {
     font-style: italic;
     font-weight: 1000;
 }
+
 /* Services */
 .services i {
     color: $color-main;
     font-size: 48px;
     border: 5px solid $color-main;
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    text-align: center;
     border-radius: 50%;
     padding: 16px;
 }
@@ -117,9 +123,9 @@ section {
 }
 .services p {
     font-size: 24px;
-    color: $color-medium;
-    
+    color: $color-medium;    
 }
+
 /* Portfolio */
 .portfolio {
     background: #e9e9e9;
@@ -143,4 +149,36 @@ section {
     background: $color-light;
     border: 16px solid #e9e9e9;
     margin: 12px 0;
+}
+
+/* Footer */
+.page-footer {
+    margin: 24px 0;
+}
+.links {
+    display: flex;
+    list-style-type: none;
+    justify-content: center; 
+    font-size: 24px;
+    padding-inline-start: 0;
+}
+.links span {
+    display: none;
+}
+.links i {
+    border-radius: 50%;
+    background: $color-dark;
+    color: $color-light;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 12px;
+    &:hover {
+        color: $color-hover;
+    }
+}
+.copy {
+    display: flex;
+    align-items: center;
 }
