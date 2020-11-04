@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 section {
@@ -210,5 +211,7 @@ section {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

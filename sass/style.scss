@@ -12,6 +12,7 @@ $transition: all 1s;
 }
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 section {
     padding: 96px 0;
@@ -181,4 +182,5 @@ section {
 .copy {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
